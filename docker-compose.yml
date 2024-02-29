@@ -7,7 +7,7 @@ services:
       PATH_FOLDER: /full_frame
       API_URL: http://195.49.212.96:9099/api/v2/orange/picture_upload
       SERVER_REQUEST_TIMEOUT: 10
-    image: enofantasyno/sender_full_picture:latest
+    image: docker.io/nofantasyno/sender_full_picture:latest
     privileged: true
     restart: always
     volumes:
