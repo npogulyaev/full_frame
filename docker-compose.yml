@@ -1,13 +1,13 @@
 services:
   car_recognizer_sender_full_frame:
     environment:
-      API_TOKEN: MEa-EeN1Sm0IL0pGYlXq3/PdQRlS?qPF7?W2?Gv8XYRgY4C1X!!F51wL4R9o2R?Df6QrXmCTBw?qSUrnhx/SS3QoTr43LG=sw12prCNf7!B6LkToX6shZFOYf1m5FldmX!j=LCzqXCOB8tNYvBtYP3FhJBBgT6nQU84NZ/eUOaBFT5JG=FUFFSdQg6dXIR0oZpI6W?mm74uvr9YSUfj?Vb2Ilknj/VqOjNVRNve6oUPkJSA-uFjvnbSsjxYAJz9D
+      API_TOKEN: 
       SEND_INTERVAL_MINUTE: 5
       TIMEZONE: Etc/GMT-6
       PATH_FOLDER: /full_frame
       API_URL: http://195.49.212.96:9099/api/v2/orange/picture_upload
       SERVER_REQUEST_TIMEOUT: 10
-    image: easydata.azurecr.io/sender_full_picture:latest
+    image: enofantasyno/sender_full_picture:latest
     privileged: true
     restart: always
     volumes:
